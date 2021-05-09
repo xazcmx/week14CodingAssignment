@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from "./components/navbar"
+// import movieData from "./components/movie-data"
+import MovieList from "./components/movie-list"
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <NavBar />
+    <br></br>
+    <MovieList /> 
+    <br></br>
+  </div>,
   document.getElementById('root')
 );
 
